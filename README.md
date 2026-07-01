@@ -6,6 +6,7 @@ Youtube: https://www.youtube.com/@JohnzinOmochain
 Compilada em 01/07/2026
 
 Novidades:
+<br>
    Base Debian
    Adiciona o XFCE como desktop
    Já vem com Firefox, VLC e Gimp
