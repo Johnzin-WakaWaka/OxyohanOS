@@ -1,9 +1,9 @@
 # OxyohanOS
-Um sistema Operacional baseado em debian feito por JohnzinOmochain
+Um Sistema Operacional baseado em Debian feito por JohnzinOmochain
+Youtube: https://www.youtube.com/@JohnzinOmochain
 
 # OxyohanOS Build 1.0.1.jzww.oxy.debian.liveCD
 Compilada em 01/07/2026
-
 
 Novidades:
    Base Debian
