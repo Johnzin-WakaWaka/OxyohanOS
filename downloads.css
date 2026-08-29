@@ -1,0 +1,20 @@
+*{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+a{
+    color: white;
+}
+
+.edit1{
+    background-color: rgba(128, 0, 128, 0.258);
+    text-align: center;
+    border-radius: 25px;
+}
+.edit1 h2, p, a{
+    background-color: rgba(128, 0, 128, 0.258);
+    border-radius: 25px;
+    color: white;
+}

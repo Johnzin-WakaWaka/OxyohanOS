@@ -1,0 +1,9 @@
+*{
+    background-color: black;
+}
+h1, p, h2, hr, h3, ol, ul{
+    color: white;
+}
+a{
+    color: purple;
+}

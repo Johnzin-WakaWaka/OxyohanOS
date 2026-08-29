@@ -1,0 +1,12 @@
+*{
+    background-color: black;
+}
+h1, p, h2, hr, h3, ol, ul, label{
+    color: white;
+}
+a{
+    color: purple;
+}
+textarea{
+    background-color: white;
+}
