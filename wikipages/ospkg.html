@@ -1,14 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pagestyle.css">
+    <style>
+        body {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+    </style>
     <title>OSpkg - Gerenciador de pacotes</title>
 </head>
 <body>
-     <a href="../linkz.html">Voltar</a>
+    <a href="../linkz.html">Voltar</a>
     <h1>OSpkg</h1>
-    <p>Em breve...</p>
+    
+    <p><strong>Licença:</strong> MIT</p>
+    
+    <h2>O que é e como funciona</h2>
+    <p>O <strong>OSpkg</strong> é um gerenciador de pacotes escrito em C que funciona como um roteador de comandos. Ele valida os argumentos passados pelo terminal e dispara a execução de scripts em Bash estruturados dentro do diretório padrão do sistema (<code>/usr/share/ospkg</code>).</p>
+    
+    <h2>Detalhes de Funcionamento (ospkg.c)</h2>
+    <ul>
+        <li><strong>Validação de Argumentos:</strong> Verifica se os parâmetros necessários foram informados. Caso contrário, exibe o painel de uso (<code>show_usage</code>) e encerra a execução.</li>
+        <li><strong>Checagem de Arquivos (<code>file_exists</code>):</strong> Utiliza a função <code>access()</code> com a flag <code>F_OK</code> para garantir que o script de destino realmente existe antes de tentar rodá-lo.</li>
+        <li><strong>Execução de Scripts (<code>execute_script</code>):</strong> Formata o comando bash num buffer seguro e utiliza <code>system()</code>, retornando o código de saída exato via <code>WEXITSTATUS()</code>.</li>
+        <li><strong>Mapeamento de Comandos:</strong>
+            <ul>
+                <li><code>update</code>: Executa o script mestre de atualização localizado em <code>/usr/share/ospkg/update/update.sh</code>.</li>
+                <li><code>install &lt;pacote&gt;</code>: Se for um arquivo <code>.sh</code> direto existente no disco, executa-o. Caso contrário, busca e executa a receita em <code>/usr/share/ospkg/receita/&lt;pacote&gt;.sh</code>.</li>
+                <li><code>uninstall &lt;pacote&gt;</code>: Executa o script de desinstalação em <code>/usr/share/ospkg/app-uninstall/&lt;pacote&gt;.sh</code>.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Uso</h2>
+    <pre><code>  ospkg install &lt;pacote|caminho/script.sh&gt;
+  ospkg uninstall &lt;pacote|caminho/script.sh&gt;
+  ospkg update</code></pre>
 </body>
 </html>
