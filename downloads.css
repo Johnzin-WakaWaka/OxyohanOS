@@ -13,7 +13,7 @@ a{
     text-align: center;
     border-radius: 25px;
 }
-.edit1 h2, p, a{
+.edit1 h2, h3, p, a{
     background-color: rgba(128, 0, 128, 0.258);
     border-radius: 25px;
     color: white;
