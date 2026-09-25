@@ -7,3 +7,16 @@ h1, p, h2, hr, h3, ol, ul{
 a{
     color: purple;
 }
+
+#NoviFrame{
+    width: 100%;
+    height: 300px;
+}
+
+.contact{
+    padding-left: 9px;
+}
+
+.init{
+    padding-left: 9px;
+}
