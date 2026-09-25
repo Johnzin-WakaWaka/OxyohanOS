@@ -1,5 +1,6 @@
 # OxyohanOS
 O OxyohanOS é uma distribuição Linux independente (projeto indie) e sem fins lucrativos desenvolvida com foco no uso diário e em proporcionar uma experiência de usuário moderna, fluida e visualmente customizada. Parte integrante do chamado Universo Oxy, o sistema é baseado na estrutura estável do Debian (com modificações próprias) e conta com o instalador Calamares.
+
 📌 Principais Características
 
     Base e Arquitetura: Construído sobre o Debian x86_64, priorizando estabilidade e otimização.
