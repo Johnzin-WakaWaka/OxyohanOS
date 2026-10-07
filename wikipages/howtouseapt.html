@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagestyle.css">
+    <title>Como usar o APT? - OxyohanOS</title>
+</head>
+<body>
+    <a href="../wiki.html">Voltar</a>
+    <h1>Como usar o APT - Tutoriais</h1>
+    <p>
+        O APT é um gerenciador de pacotes de distros Debian/Ubuntu, que é a base do OxyohanOS,
+        sendo extremamente facil e simples de usar. Veja como:
+    </p>
+    <h3>Atualizar os repositórios</h3>
+    <p>
+        Antes de atualizar o OxyohanOS, saiba que o apt OxyohanOS funciona assim: <br>
+        O OxyohanOS baixa os pacotes via repositórios do Debian e do Oxyohan para instalá-los em sua máquina
+        e para atualizar o sistema e os apps nele, primeiro tem que atualizar eles para eles não estarem desatualizados, senão
+        o sistema fica desatualizado
+    </p>
+    <p>Usa-se o comando:</p>
+    <ul>sudo apt update</ul>
+    <h3>Atualizar o OxyohanOS</h3>
+    <p>
+        Agora que você aprendeu à atualizar os repositórios (ou repos), você pode atualizar o sistema usando:
+    </p>
+    <ul>sudo apt upgrade</ul>
+    <h3>Baixar um app com o APT</h3>
+    <p>
+        Para baixar um app usando o APT, você coloca:
+    </p>
+    <ul>sudo apt install (pacote)</ul>
+    <ul>Substitua o (pacote) pelo app que deseja instalar</ul>
+    <h3>Remover um app com o APT</h3>
+    <p>
+        Para remove um app usando o APT, você coloca:
+    </p>
+    <ul>sudo apt remove (pacote)</ul>
+    <ul>Substitua o (pacote) pelo app que deseja instalar</ul>
+    <h3>Como recuperar uma instalação crashada</h3>
+    <p>
+        Se uma instalação de pacote deu erro, use o parametro --fix-broken para conserta-la
+    </p>
+    <ul>sudo apt --fix-broken</ul>
+</body>
+</html>
