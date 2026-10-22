@@ -1,26 +1,43 @@
-*{
-    background-color: black;
-}
+
 
 body{
     width: 1336px;
     height: 768px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    background-image: url(oxyImg/starts.png);
+    background-position: center center;
+    position: relative;
+}
+
+@font-face{
+    font-family: "Comic Sans MS";
+    src: url(fonts/COMIC.woff);
 }
 
 h1, p, h2, hr, h3, ol, ul{
     color: white;
+    font-family: "Comic Sans MS";
 }
 a{
-    color: purple;
+    color: blue;
+    font-family: "Comic Sans MS";
+}
+
+.page{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .pagestyle{
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #NoviFrame{
+    background-color: black;
     width: 100%;
     height: 300px;
+    border: 5px dotted white;
 }
 
 .contact{
@@ -36,6 +53,8 @@ a{
 }
 
 center{
+    background-color: black;
+    background-image: url(oxyImg/starts.png);
     padding-left: 9px;
     border: 5px dotted white;
 }
