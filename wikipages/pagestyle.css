@@ -1,9 +1,16 @@
 *{
     background-color: black;
+    background-image: url(../oxyImg/starts.png);
+}
+@font-face{
+    font-family: "Comic Sans MS";
+    src: url(../fonts/COMIC.woff);
 }
 h1, p, h2, hr, h3, ol, ul{
     color: white;
+    font-family: "Comic Sans MS";
 }
 a{
-    color: purple;
+    color: blue;
+    font-family: "Comic Sans MS";
 }
